@@ -1,0 +1,49 @@
+-- Logs begin at Wed 2020-02-26 06:36:13 UTC, end at Wed 2020-02-26 09:03:00 UTC. --
+Feb 26 08:32:53 cloud-provider1-0000008684 systemd[1]: Starting Devstack devstack@etcd.service...
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: etcd Version: 3.3.12
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: Git SHA: d57e8b8
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: Go Version: go1.10.8
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: Go OS/Arch: linux/amd64
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: setting maximum number of CPUs to 2, total number of available CPUs is 2
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: listening for peers on http://0.0.0.0:2380
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: listening for client requests on 192.168.79.48:2379
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: name = cloud-provider1-0000008684
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: data dir = /opt/stack/data/etcd
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: member dir = /opt/stack/data/etcd/member
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: heartbeat = 100ms
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: election = 1000ms
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: snapshot count = 100000
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: advertise client URLs = http://192.168.79.48:2379
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: initial advertise peer URLs = http://192.168.79.48:2380
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: initial cluster = cloud-provider1-0000008684=http://192.168.79.48:2380
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: starting member c79d139bd2670313 in cluster 46320cb755c2ccf4
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: c79d139bd2670313 became follower at term 0
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: newRaft c79d139bd2670313 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: c79d139bd2670313 became follower at term 1
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: simple token is not cryptographically signed
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: starting server... [version: 3.3.12, cluster version: to_be_decided]
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: c79d139bd2670313 as single-node; fast-forwarding 9 ticks (election ticks 10)
+Feb 26 08:32:53 cloud-provider1-0000008684 etcd[16187]: added member c79d139bd2670313 [http://192.168.79.48:2380] to cluster 46320cb755c2ccf4
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: c79d139bd2670313 is starting a new election at term 1
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: c79d139bd2670313 became candidate at term 2
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: c79d139bd2670313 received MsgVoteResp from c79d139bd2670313 at term 2
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: c79d139bd2670313 became leader at term 2
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: raft.node: c79d139bd2670313 elected leader c79d139bd2670313 at term 2
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: setting up the initial cluster version to 3.3
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: published {Name:cloud-provider1-0000008684 ClientURLs:[http://192.168.79.48:2379]} to cluster 46320cb755c2ccf4
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: set the initial cluster version to 3.3
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: enabled capabilities for version 3.3
+Feb 26 08:32:54 cloud-provider1-0000008684 systemd[1]: Started Devstack devstack@etcd.service.
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: ready to serve client requests
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: INFO: 2020/02/26 08:32:54 dialing to target with scheme: ""
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: INFO: 2020/02/26 08:32:54 could not get resolver for scheme: ""
+Feb 26 08:32:54 cloud-provider1-0000008684 etcd[16187]: serving insecure client requests on 192.168.79.48:2379, this is strongly discouraged!
+Feb 26 08:37:54 cloud-provider1-0000008684 etcd[16187]: start time = 2020-02-26 08:37:54.660059889 +0000 UTC m=+301.222002637, time spent = 277.895µs, remote = 192.168.79.48:34292, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Feb 26 08:37:54 cloud-provider1-0000008684 etcd[16187]: start time = 2020-02-26 08:37:54.662920867 +0000 UTC m=+301.224863615, time spent = 120.034µs, remote = 192.168.79.48:34292, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Feb 26 08:38:03 cloud-provider1-0000008684 etcd[16187]: start time = 2020-02-26 08:38:03.580712334 +0000 UTC m=+310.142655122, time spent = 377.024µs, remote = 192.168.79.48:34292, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Feb 26 08:41:06 cloud-provider1-0000008684 etcd[16187]: start time = 2020-02-26 08:41:06.397457115 +0000 UTC m=+492.959399866, time spent = 336.124µs, remote = 192.168.79.48:34292, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Feb 26 08:41:06 cloud-provider1-0000008684 etcd[16187]: start time = 2020-02-26 08:41:06.400139165 +0000 UTC m=+492.962081919, time spent = 115.258µs, remote = 192.168.79.48:34292, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Feb 26 08:41:08 cloud-provider1-0000008684 etcd[16187]: start time = 2020-02-26 08:41:08.045861161 +0000 UTC m=+494.607803909, time spent = 176.907µs, remote = 192.168.79.48:34292, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Feb 26 08:41:40 cloud-provider1-0000008684 etcd[16187]: start time = 2020-02-26 08:41:40.075248203 +0000 UTC m=+526.637190952, time spent = 135.92µs, remote = 192.168.79.48:34292, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Feb 26 08:41:40 cloud-provider1-0000008684 etcd[16187]: start time = 2020-02-26 08:41:40.164075995 +0000 UTC m=+526.726018744, time spent = 154.206µs, remote = 192.168.79.48:34292, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Feb 26 08:41:44 cloud-provider1-0000008684 etcd[16187]: start time = 2020-02-26 08:41:44.208149261 +0000 UTC m=+530.770092005, time spent = 149.315µs, remote = 192.168.79.48:34292, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 

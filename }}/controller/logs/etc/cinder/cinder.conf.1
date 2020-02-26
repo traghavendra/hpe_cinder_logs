@@ -1,0 +1,74 @@
+[keystone_authtoken]
+memcached_servers = localhost:11211
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = hpinvent
+username = cinder
+auth_url = http://192.168.1.2/identity
+auth_type = password
+
+[DEFAULT]
+cinder_internal_tenant_user_id = e4f1d49f72c84ce787a91f4b43ebf518
+cinder_internal_tenant_project_id = 43cf454461394d7681616ba2fddebf87
+graceful_shutdown_timeout = 5
+glance_api_version = 2
+glance_api_servers = http://192.168.1.2/image
+osapi_volume_workers = 8
+logging_user_identity_format = %(project_name)s %(user_name)s
+transport_url = rabbit://stackrabbit:hpinvent@192.168.79.1:5672/
+default_volume_type = 3par
+enabled_backends = 3par
+my_ip = 192.168.1.2
+state_path = /opt/stack/data/cinder
+osapi_volume_listen = 0.0.0.0
+osapi_volume_extension = cinder.api.contrib.standard_extensions
+rootwrap_config = /etc/cinder/rootwrap.conf
+api_paste_config = /etc/cinder/api-paste.ini
+target_helper = tgtadm
+debug = True
+
+[database]
+connection = mysql+pymysql://root:hpinvent@127.0.0.1/cinder?charset=utf8
+
+[oslo_concurrency]
+lock_path = /opt/stack/data/cinder
+
+[key_manager]
+fixed_key = bae3516cc1c0eb18b05440eba8012a4a880a2ee04d584a9c1579445e675b12defdc716ec
+backend = cinder.keymgr.conf_key_mgr.ConfKeyManager
+
+
+[nova]
+region_name = RegionOne
+memcached_servers = localhost:11211
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = hpinvent
+username = nova
+auth_url = http://192.168.1.2/identity
+auth_type = password
+
+[3par]
+volume_driver=cinder.volume.drivers.hpe.hpe_3par_iscsi.HPE3PARISCSIDriver
+volume_backend_name=3par
+#Increase the number of retries from the default of 3
+num_volume_device_scan_tries=15
+hpe3par_api_url=https://192.168.67.5:8080/api/v1
+hpe3par_username=3paradm
+hpe3par_password=3pardata
+hep3par_debug=True
+san_ip=192.168.67.5
+san_login=3paradm
+san_password=3pardata
+hpe3par_cpg=cloud_provider1_iscsi
+hpe3par_iscsi_ips=192.168.68.202,192.168.68.206
+
+
+[coordination]
+backend_url = etcd3+http://192.168.1.2:2379
+
+
