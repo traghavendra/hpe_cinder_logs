@@ -1,0 +1,40 @@
+-- Logs begin at Tue 2020-03-10 05:50:04 UTC, end at Tue 2020-03-10 07:21:11 UTC. --
+Mar 10 07:18:54 cloud-provider1-0000012544 systemd[1]: Starting Devstack devstack@etcd.service...
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: etcd Version: 3.3.12
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: Git SHA: d57e8b8
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: Go Version: go1.10.8
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: Go OS/Arch: linux/amd64
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: listening for peers on http://0.0.0.0:2380
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: listening for client requests on 192.168.79.47:2379
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: name = cloud-provider1-0000012544
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: data dir = /opt/stack/data/etcd
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: member dir = /opt/stack/data/etcd/member
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: heartbeat = 100ms
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: election = 1000ms
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: snapshot count = 100000
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: advertise client URLs = http://192.168.79.47:2379
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: initial advertise peer URLs = http://192.168.79.47:2380
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: initial cluster = cloud-provider1-0000012544=http://192.168.79.47:2380
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: starting member bc7a601bae29ec7a in cluster e843fa4e117f03f3
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: bc7a601bae29ec7a became follower at term 0
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: newRaft bc7a601bae29ec7a [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: bc7a601bae29ec7a became follower at term 1
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: simple token is not cryptographically signed
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: starting server... [version: 3.3.12, cluster version: to_be_decided]
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: bc7a601bae29ec7a as single-node; fast-forwarding 9 ticks (election ticks 10)
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: added member bc7a601bae29ec7a [http://192.168.79.47:2380] to cluster e843fa4e117f03f3
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: bc7a601bae29ec7a is starting a new election at term 1
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: bc7a601bae29ec7a became candidate at term 2
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: bc7a601bae29ec7a received MsgVoteResp from bc7a601bae29ec7a at term 2
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: bc7a601bae29ec7a became leader at term 2
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: raft.node: bc7a601bae29ec7a elected leader bc7a601bae29ec7a at term 2
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: setting up the initial cluster version to 3.3
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: set the initial cluster version to 3.3
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: ready to serve client requests
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: INFO: 2020/03/10 07:18:54 dialing to target with scheme: ""
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: INFO: 2020/03/10 07:18:54 could not get resolver for scheme: ""
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: published {Name:cloud-provider1-0000012544 ClientURLs:[http://192.168.79.47:2379]} to cluster e843fa4e117f03f3
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: enabled capabilities for version 3.3
+Mar 10 07:18:54 cloud-provider1-0000012544 systemd[1]: Started Devstack devstack@etcd.service.
+Mar 10 07:18:54 cloud-provider1-0000012544 etcd[31491]: serving insecure client requests on 192.168.79.47:2379, this is strongly discouraged!
