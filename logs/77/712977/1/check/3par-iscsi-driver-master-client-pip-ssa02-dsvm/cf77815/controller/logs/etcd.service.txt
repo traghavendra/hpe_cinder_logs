@@ -1,0 +1,43 @@
+-- Logs begin at Fri 2020-03-13 14:41:32 UTC, end at Fri 2020-03-13 16:16:53 UTC. --
+Mar 13 16:05:36 cloud-provider1-0000015773 systemd[1]: Starting Devstack devstack@etcd.service...
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: etcd Version: 3.3.12
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: Git SHA: d57e8b8
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: Go Version: go1.10.8
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: Go OS/Arch: linux/amd64
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: listening for peers on http://0.0.0.0:2380
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: listening for client requests on 192.168.79.37:2379
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: name = cloud-provider1-0000015773
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: data dir = /opt/stack/data/etcd
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: member dir = /opt/stack/data/etcd/member
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: heartbeat = 100ms
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: election = 1000ms
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: snapshot count = 100000
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: advertise client URLs = http://192.168.79.37:2379
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: initial advertise peer URLs = http://192.168.79.37:2380
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: initial cluster = cloud-provider1-0000015773=http://192.168.79.37:2380
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: starting member 9f686e0d66cdbbad in cluster 41d8ba497774a7b1
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: 9f686e0d66cdbbad became follower at term 0
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: newRaft 9f686e0d66cdbbad [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: 9f686e0d66cdbbad became follower at term 1
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: simple token is not cryptographically signed
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: starting server... [version: 3.3.12, cluster version: to_be_decided]
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: 9f686e0d66cdbbad as single-node; fast-forwarding 9 ticks (election ticks 10)
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: added member 9f686e0d66cdbbad [http://192.168.79.37:2380] to cluster 41d8ba497774a7b1
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: 9f686e0d66cdbbad is starting a new election at term 1
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: 9f686e0d66cdbbad became candidate at term 2
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: 9f686e0d66cdbbad received MsgVoteResp from 9f686e0d66cdbbad at term 2
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: 9f686e0d66cdbbad became leader at term 2
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: raft.node: 9f686e0d66cdbbad elected leader 9f686e0d66cdbbad at term 2
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: published {Name:cloud-provider1-0000015773 ClientURLs:[http://192.168.79.37:2379]} to cluster 41d8ba497774a7b1
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: ready to serve client requests
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: setting up the initial cluster version to 3.3
+Mar 13 16:05:36 cloud-provider1-0000015773 systemd[1]: Started Devstack devstack@etcd.service.
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: INFO: 2020/03/13 16:05:36 dialing to target with scheme: ""
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: INFO: 2020/03/13 16:05:36 could not get resolver for scheme: ""
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: serving insecure client requests on 192.168.79.37:2379, this is strongly discouraged!
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: set the initial cluster version to 3.3
+Mar 13 16:05:36 cloud-provider1-0000015773 etcd[31302]: enabled capabilities for version 3.3
+Mar 13 16:13:27 cloud-provider1-0000015773 etcd[31302]: start time = 2020-03-13 16:13:27.595830324 +0000 UTC m=+471.043912014, time spent = 237.75µs, remote = 192.168.79.37:32814, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Mar 13 16:13:27 cloud-provider1-0000015773 etcd[31302]: start time = 2020-03-13 16:13:27.762335537 +0000 UTC m=+471.210417236, time spent = 177.576µs, remote = 192.168.79.37:32814, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Mar 13 16:13:35 cloud-provider1-0000015773 etcd[31302]: start time = 2020-03-13 16:13:35.03302265 +0000 UTC m=+478.481104360, time spent = 349.565µs, remote = 192.168.79.37:32814, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
