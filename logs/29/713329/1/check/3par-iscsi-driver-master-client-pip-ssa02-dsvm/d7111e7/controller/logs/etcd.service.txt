@@ -1,0 +1,43 @@
+-- Logs begin at Mon 2020-03-16 19:56:30 UTC, end at Mon 2020-03-16 21:35:21 UTC. --
+Mar 16 21:24:02 cloud-provider1-0000016591 systemd[1]: Starting Devstack devstack@etcd.service...
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: etcd Version: 3.3.12
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: Git SHA: d57e8b8
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: Go Version: go1.10.8
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: Go OS/Arch: linux/amd64
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: listening for peers on http://0.0.0.0:2380
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: listening for client requests on 192.168.79.42:2379
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: name = cloud-provider1-0000016591
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: data dir = /opt/stack/data/etcd
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: member dir = /opt/stack/data/etcd/member
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: heartbeat = 100ms
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: election = 1000ms
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: snapshot count = 100000
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: advertise client URLs = http://192.168.79.42:2379
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: initial advertise peer URLs = http://192.168.79.42:2380
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: initial cluster = cloud-provider1-0000016591=http://192.168.79.42:2380
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: starting member ded86539d6fde0f1 in cluster ed8855d3f440bce
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: ded86539d6fde0f1 became follower at term 0
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: newRaft ded86539d6fde0f1 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: ded86539d6fde0f1 became follower at term 1
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: simple token is not cryptographically signed
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: starting server... [version: 3.3.12, cluster version: to_be_decided]
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: ded86539d6fde0f1 as single-node; fast-forwarding 9 ticks (election ticks 10)
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: added member ded86539d6fde0f1 [http://192.168.79.42:2380] to cluster ed8855d3f440bce
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: ded86539d6fde0f1 is starting a new election at term 1
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: ded86539d6fde0f1 became candidate at term 2
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: ded86539d6fde0f1 received MsgVoteResp from ded86539d6fde0f1 at term 2
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: ded86539d6fde0f1 became leader at term 2
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: raft.node: ded86539d6fde0f1 elected leader ded86539d6fde0f1 at term 2
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: published {Name:cloud-provider1-0000016591 ClientURLs:[http://192.168.79.42:2379]} to cluster ed8855d3f440bce
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: ready to serve client requests
+Mar 16 21:24:02 cloud-provider1-0000016591 systemd[1]: Started Devstack devstack@etcd.service.
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: setting up the initial cluster version to 3.3
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: set the initial cluster version to 3.3
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: enabled capabilities for version 3.3
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: INFO: 2020/03/16 21:24:02 dialing to target with scheme: ""
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: INFO: 2020/03/16 21:24:02 could not get resolver for scheme: ""
+Mar 16 21:24:02 cloud-provider1-0000016591 etcd[31293]: serving insecure client requests on 192.168.79.42:2379, this is strongly discouraged!
+Mar 16 21:31:57 cloud-provider1-0000016591 etcd[31293]: start time = 2020-03-16 21:31:57.287781379 +0000 UTC m=+475.231878112, time spent = 331.374µs, remote = 192.168.79.42:48964, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Mar 16 21:31:57 cloud-provider1-0000016591 etcd[31293]: start time = 2020-03-16 21:31:57.323644004 +0000 UTC m=+475.267740776, time spent = 348.163µs, remote = 192.168.79.42:48964, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Mar 16 21:32:04 cloud-provider1-0000016591 etcd[31293]: start time = 2020-03-16 21:32:04.512595267 +0000 UTC m=+482.456691996, time spent = 204.59µs, remote = 192.168.79.42:48964, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
