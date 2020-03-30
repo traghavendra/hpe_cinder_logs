@@ -1,0 +1,43 @@
+-- Logs begin at Sun 2020-03-29 11:26:56 UTC, end at Mon 2020-03-30 00:59:38 UTC. --
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 systemd[1]: Starting Devstack devstack@etcd.service...
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: etcd Version: 3.3.12
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: Git SHA: d57e8b8
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: Go Version: go1.10.8
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: Go OS/Arch: linux/amd64
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: listening for peers on http://0.0.0.0:2380
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: listening for client requests on 192.168.79.45:2379
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: name = cloud-provider-iscsi-0000000065
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: data dir = /opt/stack/data/etcd
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: member dir = /opt/stack/data/etcd/member
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: heartbeat = 100ms
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: election = 1000ms
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: snapshot count = 100000
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: advertise client URLs = http://192.168.79.45:2379
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: initial advertise peer URLs = http://192.168.79.45:2380
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: initial cluster = cloud-provider-iscsi-0000000065=http://192.168.79.45:2380
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: starting member 3d6d3371b1d13e09 in cluster 333b0c57293a5fc3
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: 3d6d3371b1d13e09 became follower at term 0
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: newRaft 3d6d3371b1d13e09 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: 3d6d3371b1d13e09 became follower at term 1
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: simple token is not cryptographically signed
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: starting server... [version: 3.3.12, cluster version: to_be_decided]
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: 3d6d3371b1d13e09 as single-node; fast-forwarding 9 ticks (election ticks 10)
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: added member 3d6d3371b1d13e09 [http://192.168.79.45:2380] to cluster 333b0c57293a5fc3
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: 3d6d3371b1d13e09 is starting a new election at term 1
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: 3d6d3371b1d13e09 became candidate at term 2
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: 3d6d3371b1d13e09 received MsgVoteResp from 3d6d3371b1d13e09 at term 2
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: 3d6d3371b1d13e09 became leader at term 2
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: raft.node: 3d6d3371b1d13e09 elected leader 3d6d3371b1d13e09 at term 2
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: setting up the initial cluster version to 3.3
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: set the initial cluster version to 3.3
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: enabled capabilities for version 3.3
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 systemd[1]: Started Devstack devstack@etcd.service.
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: ready to serve client requests
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: published {Name:cloud-provider-iscsi-0000000065 ClientURLs:[http://192.168.79.45:2379]} to cluster 333b0c57293a5fc3
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: INFO: 2020/03/30 00:47:58 dialing to target with scheme: ""
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: INFO: 2020/03/30 00:47:58 could not get resolver for scheme: ""
+Mar 30 00:47:58 cloud-provider-iscsi-0000000065 etcd[31738]: serving insecure client requests on 192.168.79.45:2379, this is strongly discouraged!
+Mar 30 00:56:24 cloud-provider-iscsi-0000000065 etcd[31738]: start time = 2020-03-30 00:56:24.359204405 +0000 UTC m=+506.146585754, time spent = 480.951µs, remote = 192.168.79.45:59564, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Mar 30 00:56:24 cloud-provider-iscsi-0000000065 etcd[31738]: start time = 2020-03-30 00:56:24.50450854 +0000 UTC m=+506.291889857, time spent = 196.509µs, remote = 192.168.79.45:59564, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Mar 30 00:56:32 cloud-provider-iscsi-0000000065 etcd[31738]: start time = 2020-03-30 00:56:32.238552381 +0000 UTC m=+514.025933674, time spent = 176.367µs, remote = 192.168.79.45:59564, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
