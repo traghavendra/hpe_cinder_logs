@@ -1,0 +1,74 @@
+-- Logs begin at Thu 2020-04-02 09:19:19 UTC, end at Thu 2020-04-02 10:19:10 UTC. --
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: Starting Devstack devstack@etcd.service...
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30629]: etcd Version: 3.3.12
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30629]: Git SHA: d57e8b8
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30629]: Go Version: go1.10.8
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30629]: Go OS/Arch: linux/amd64
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30629]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30629]: listening for peers on http://0.0.0.0:2380
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30629]: listen tcp 192.168.79.38:2379: bind: cannot assign requested address
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Main process exited, code=exited, status=1/FAILURE
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Failed with result 'exit-code'.
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: Failed to start Devstack devstack@etcd.service.
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Service hold-off time over, scheduling restart.
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Scheduled restart job, restart counter is at 1.
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: Stopped Devstack devstack@etcd.service.
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: Starting Devstack devstack@etcd.service...
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30724]: etcd Version: 3.3.12
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30724]: Git SHA: d57e8b8
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30724]: Go Version: go1.10.8
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30724]: Go OS/Arch: linux/amd64
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30724]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30724]: listening for peers on http://0.0.0.0:2380
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30724]: listen tcp 192.168.79.38:2379: bind: cannot assign requested address
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Main process exited, code=exited, status=1/FAILURE
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Failed with result 'exit-code'.
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: Failed to start Devstack devstack@etcd.service.
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Service hold-off time over, scheduling restart.
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Scheduled restart job, restart counter is at 2.
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: Stopped Devstack devstack@etcd.service.
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: Starting Devstack devstack@etcd.service...
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30733]: etcd Version: 3.3.12
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30733]: Git SHA: d57e8b8
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30733]: Go Version: go1.10.8
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30733]: Go OS/Arch: linux/amd64
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30733]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30733]: listening for peers on http://0.0.0.0:2380
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 etcd[30733]: listen tcp 192.168.79.38:2379: bind: cannot assign requested address
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Main process exited, code=exited, status=1/FAILURE
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Failed with result 'exit-code'.
+Apr 02 10:18:30 cloud-provider-iscsi-0000000145 systemd[1]: Failed to start Devstack devstack@etcd.service.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Service hold-off time over, scheduling restart.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Scheduled restart job, restart counter is at 3.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: Stopped Devstack devstack@etcd.service.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: Starting Devstack devstack@etcd.service...
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30765]: etcd Version: 3.3.12
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30765]: Git SHA: d57e8b8
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30765]: Go Version: go1.10.8
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30765]: Go OS/Arch: linux/amd64
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30765]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30765]: listening for peers on http://0.0.0.0:2380
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30765]: listen tcp 192.168.79.38:2379: bind: cannot assign requested address
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Main process exited, code=exited, status=1/FAILURE
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Failed with result 'exit-code'.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: Failed to start Devstack devstack@etcd.service.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Service hold-off time over, scheduling restart.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Scheduled restart job, restart counter is at 4.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: Stopped Devstack devstack@etcd.service.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: Starting Devstack devstack@etcd.service...
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30808]: etcd Version: 3.3.12
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30808]: Git SHA: d57e8b8
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30808]: Go Version: go1.10.8
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30808]: Go OS/Arch: linux/amd64
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30808]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30808]: listening for peers on http://0.0.0.0:2380
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 etcd[30808]: listen tcp 192.168.79.38:2379: bind: cannot assign requested address
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Main process exited, code=exited, status=1/FAILURE
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Failed with result 'exit-code'.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: Failed to start Devstack devstack@etcd.service.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Service hold-off time over, scheduling restart.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Scheduled restart job, restart counter is at 5.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: Stopped Devstack devstack@etcd.service.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Start request repeated too quickly.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: devstack@etcd.service: Failed with result 'exit-code'.
+Apr 02 10:18:31 cloud-provider-iscsi-0000000145 systemd[1]: Failed to start Devstack devstack@etcd.service.
