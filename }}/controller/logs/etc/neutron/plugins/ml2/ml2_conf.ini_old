@@ -227,9 +227,8 @@ vni_ranges = 1:1000
 #vni_ranges =
 
 # Geneve encapsulation header size is dynamic, this value is used to calculate
-# the maximum MTU for the driver. This is the sum of the sizes of the outer ETH
-# + IP + UDP + GENEVE header sizes. The default size for this field is 50,
-# which is the size of the Geneve header without any additional option headers.
+# the maximum MTU for the driver. The default size for this field is 30, which
+# is the size of the Geneve header without any additional option headers.
 # (integer value)
 #max_header_size = 30
 
@@ -341,4 +340,4 @@ root_helper = sudo /usr/local/bin/neutron-rootwrap /etc/neutron/rootwrap.conf
 datapath_type = system
 bridge_mappings = private:br-ens3.10
 tunnel_bridge = br-tun
-local_ip = 192.168.79.38
+local_ip = 192.168.79.39
