@@ -64,7 +64,7 @@ html_end = """
 </html>
 """
 
-ignore_ext = ['.txt', '.log', '.gz', '.pdf', '.ini', '.json', '.conf', 'logs2html.py']
+ignore_ext = ['.xz', '.txt', '.log', '.gz', '.pdf', '.ini', '.json', '.conf', 'logs2html.py']
 
 
 def create_html(path):
