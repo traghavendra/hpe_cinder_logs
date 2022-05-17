@@ -1,0 +1,28 @@
+2022-05-17 16:33:15.298 | stack.sh log /tmp/devstack_logs/devstacklog.txt.2022-05-17-163315
+2022-05-17 16:33:25.724 | Installing package prerequisites
+2022-05-17 16:37:21.470 | Starting RabbitMQ
+2022-05-17 16:38:10.522 | Installing OpenStack project source
+2022-05-17 16:49:11.790 | Installing Tempest
+2022-05-17 16:49:20.941 | Configuring and starting MySQL
+2022-05-17 16:49:35.594 | Starting Keystone
+2022-05-17 16:52:24.152 | Configuring Glance
+2022-05-17 16:52:24.431 | Configuring Neutron
+2022-05-17 16:53:33.384 | Configuring Swift
+2022-05-17 16:53:33.648 | Configuring Cinder
+2022-05-17 16:53:33.881 | Configuring placement
+2022-05-17 16:54:28.424 | Configuring Nova
+2022-05-17 16:55:11.028 | Starting Swift
+2022-05-17 16:55:30.271 | Starting Nova API
+2022-05-17 16:55:39.186 | Starting OVN services
+2022-05-17 16:56:11.717 | Starting Neutron
+2022-05-17 16:56:22.109 | Starting Placement
+2022-05-17 16:56:29.279 | Creating initial neutron network elements
+2022-05-17 16:57:00.998 | Starting Nova
+2022-05-17 16:57:21.343 | Starting Cinder
+2022-05-17 16:57:37.055 | Starting Glance
+2022-05-17 16:57:43.579 | Uploading images
+2022-05-17 16:58:13.516 | Configuring lvm.conf global device filter
+2022-05-17 16:58:13.910 | set lvm.conf device global_filter to: global_filter = [ "a|loop4|", "r|.*|" ] # from devstack
+2022-05-17 16:58:14.545 | Initializing Tempest
+2022-05-17 17:00:23.792 | Installing Tempest Plugins
+2022-05-17 17:00:24.285 | stack.sh completed in 1637 seconds.
