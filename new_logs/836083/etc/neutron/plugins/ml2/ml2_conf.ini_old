@@ -100,7 +100,7 @@
 
 # Format string to use for log messages with context. Used by
 # oslo_log.formatters.ContextFormatter (string value)
-#logging_context_format_string = %(asctime)s.%(msecs)03d %(process)d %(levelname)s %(name)s [%(request_id)s %(user_identity)s] %(instance)s%(message)s
+#logging_context_format_string = %(asctime)s.%(msecs)03d %(process)d %(levelname)s %(name)s [%(global_request_id)s %(request_id)s %(user_identity)s] %(instance)s%(message)s
 
 # Format string to use for log messages when context is undefined. Used by
 # oslo_log.formatters.ContextFormatter (string value)
@@ -117,7 +117,7 @@
 # Defines the format string for %(user_identity)s that is used in
 # logging_context_format_string. Used by oslo_log.formatters.ContextFormatter
 # (string value)
-#logging_user_identity_format = %(user)s %(project)s %(domain)s %(user_domain)s %(project_domain)s
+#logging_user_identity_format = %(user)s %(project)s %(domain)s %(system_scope)s %(user_domain)s %(project_domain)s
 
 # List of package logging levels in logger=LEVEL pairs. This option is ignored
 # if log_config_append is set. (list value)
@@ -343,5 +343,5 @@ enable_security_group = True
 ovn_metadata_enabled = True
 ovn_l3_scheduler = leastloaded
 neutron_sync_mode = log
-ovn_sb_connection = tcp:192.168.79.39:6642
-ovn_nb_connection = tcp:192.168.79.39:6641
+ovn_sb_connection = tcp:192.168.79.38:6642
+ovn_nb_connection = tcp:192.168.79.38:6641
