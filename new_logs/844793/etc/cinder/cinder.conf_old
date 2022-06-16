@@ -7,27 +7,27 @@ project_name = service
 user_domain_name = Default
 password = hpinvent
 username = cinder
-auth_url = http://192.168.79.46/identity
+auth_url = http://192.168.79.39/identity
 interface = public
 auth_type = password
 
 [DEFAULT]
-cinder_internal_tenant_user_id = 9f5aef587bfc44b6953f76de8d0a1cd1
-cinder_internal_tenant_project_id = e42bbafa17f4471689c14c684bda99c9
+cinder_internal_tenant_user_id = e5c55974c9cc4ef19c834bba9c52e41a
+cinder_internal_tenant_project_id = 9ae264cb31df40b697e8c0f3734e7b67
 graceful_shutdown_timeout = 5
-glance_api_servers = http://192.168.79.46/image
+glance_api_servers = http://192.168.79.39/image
 osapi_volume_workers = 2
 logging_exception_prefix = ERROR %(name)s [01;35m%(instance)s[00m
 logging_default_format_string = %(color)s%(levelname)s %(name)s [[00;36m-%(color)s] [01;35m%(instance)s%(color)s%(message)s[00m
 logging_context_format_string = %(color)s%(levelname)s %(name)s [[01;36m%(global_request_id)s %(request_id)s [00;36m%(project_name)s %(user_name)s%(color)s] [01;35m%(instance)s%(color)s%(message)s[00m
 logging_debug_format_suffix = [00;33m{{(pid=%(process)d) %(funcName)s %(pathname)s:%(lineno)d}}[00m
-transport_url = rabbit://stackrabbit:hpinvent@192.168.79.46:5672/
-backup_swift_url = http://192.168.79.46:8080/v1/AUTH_
+transport_url = rabbit://stackrabbit:hpinvent@192.168.79.39:5672/
+backup_swift_url = http://192.168.79.39:8080/v1/AUTH_
 backup_driver = cinder.backup.drivers.swift.SwiftBackupDriver
 default_volume_type = lvmdriver-1
 enabled_backends = lvmdriver-1
 rpc_response_timeout = 120
-my_ip = 192.168.79.46
+my_ip = 192.168.79.39
 state_path = /opt/stack/data/cinder
 osapi_volume_listen = 0.0.0.0
 osapi_volume_extension = cinder.api.contrib.standard_extensions
@@ -64,9 +64,9 @@ project_name = service
 user_domain_name = Default
 password = hpinvent
 username = nova
-auth_url = http://192.168.79.46/identity
+auth_url = http://192.168.79.39/identity
 interface = public
 auth_type = password
 
 [coordination]
-backend_url = etcd3+http://192.168.79.46:2379
+backend_url = etcd3+http://192.168.79.39:2379
