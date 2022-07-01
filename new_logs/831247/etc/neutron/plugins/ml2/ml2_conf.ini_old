@@ -154,6 +154,7 @@
 tenant_network_types = geneve
 extension_drivers = port_security,qos
 type_drivers = local,flat,vlan,geneve
+overlay_ip_version = 4
 mechanism_drivers = ovn,logger
 
 #
