@@ -1,0 +1,54 @@
+-- Logs begin at Mon 2022-07-04 16:53:37 UTC, end at Mon 2022-07-04 21:58:30 UTC. --
+Jul 04 21:44:39 ubuntu systemd[1]: Starting Devstack devstack@etcd.service...
+Jul 04 21:44:39 ubuntu etcd[83772]: etcd Version: 3.3.12
+Jul 04 21:44:39 ubuntu etcd[83772]: Git SHA: d57e8b8
+Jul 04 21:44:39 ubuntu etcd[83772]: Go Version: go1.10.8
+Jul 04 21:44:39 ubuntu etcd[83772]: Go OS/Arch: linux/amd64
+Jul 04 21:44:39 ubuntu etcd[83772]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Jul 04 21:44:39 ubuntu etcd[83772]: listening for peers on http://0.0.0.0:2380
+Jul 04 21:44:39 ubuntu etcd[83772]: listening for client requests on 192.168.79.46:2379
+Jul 04 21:44:39 ubuntu etcd[83772]: name = ubuntu
+Jul 04 21:44:39 ubuntu etcd[83772]: data dir = /opt/stack/data/etcd
+Jul 04 21:44:39 ubuntu etcd[83772]: member dir = /opt/stack/data/etcd/member
+Jul 04 21:44:39 ubuntu etcd[83772]: heartbeat = 100ms
+Jul 04 21:44:39 ubuntu etcd[83772]: election = 1000ms
+Jul 04 21:44:39 ubuntu etcd[83772]: snapshot count = 100000
+Jul 04 21:44:39 ubuntu etcd[83772]: advertise client URLs = http://192.168.79.46:2379
+Jul 04 21:44:39 ubuntu etcd[83772]: initial advertise peer URLs = http://192.168.79.46:2380
+Jul 04 21:44:39 ubuntu etcd[83772]: initial cluster = ubuntu=http://192.168.79.46:2380
+Jul 04 21:44:39 ubuntu etcd[83772]: starting member badf6973fad3533f in cluster e37d5472f6817136
+Jul 04 21:44:39 ubuntu etcd[83772]: badf6973fad3533f became follower at term 0
+Jul 04 21:44:39 ubuntu etcd[83772]: newRaft badf6973fad3533f [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Jul 04 21:44:39 ubuntu etcd[83772]: badf6973fad3533f became follower at term 1
+Jul 04 21:44:39 ubuntu etcd[83772]: simple token is not cryptographically signed
+Jul 04 21:44:39 ubuntu etcd[83772]: starting server... [version: 3.3.12, cluster version: to_be_decided]
+Jul 04 21:44:39 ubuntu etcd[83772]: badf6973fad3533f as single-node; fast-forwarding 9 ticks (election ticks 10)
+Jul 04 21:44:39 ubuntu etcd[83772]: added member badf6973fad3533f [http://192.168.79.46:2380] to cluster e37d5472f6817136
+Jul 04 21:44:40 ubuntu etcd[83772]: badf6973fad3533f is starting a new election at term 1
+Jul 04 21:44:40 ubuntu etcd[83772]: badf6973fad3533f became candidate at term 2
+Jul 04 21:44:40 ubuntu etcd[83772]: badf6973fad3533f received MsgVoteResp from badf6973fad3533f at term 2
+Jul 04 21:44:40 ubuntu etcd[83772]: badf6973fad3533f became leader at term 2
+Jul 04 21:44:40 ubuntu etcd[83772]: raft.node: badf6973fad3533f elected leader badf6973fad3533f at term 2
+Jul 04 21:44:40 ubuntu etcd[83772]: setting up the initial cluster version to 3.3
+Jul 04 21:44:40 ubuntu etcd[83772]: set the initial cluster version to 3.3
+Jul 04 21:44:40 ubuntu etcd[83772]: enabled capabilities for version 3.3
+Jul 04 21:44:40 ubuntu etcd[83772]: published {Name:ubuntu ClientURLs:[http://192.168.79.46:2379]} to cluster e37d5472f6817136
+Jul 04 21:44:40 ubuntu etcd[83772]: ready to serve client requests
+Jul 04 21:44:40 ubuntu systemd[1]: Started Devstack devstack@etcd.service.
+Jul 04 21:44:40 ubuntu etcd[83772]: INFO: 2022/07/04 21:44:40 dialing to target with scheme: ""
+Jul 04 21:44:40 ubuntu etcd[83772]: INFO: 2022/07/04 21:44:40 could not get resolver for scheme: ""
+Jul 04 21:44:40 ubuntu etcd[83772]: serving insecure client requests on 192.168.79.46:2379, this is strongly discouraged!
+Jul 04 21:52:01 ubuntu etcd[83772]: start time = 2022-07-04 21:52:01.950904039 +0000 UTC m=+442.480720661, time spent = 325.89µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:52:02 ubuntu etcd[83772]: start time = 2022-07-04 21:52:02.000786691 +0000 UTC m=+442.530603329, time spent = 152.169µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:52:10 ubuntu etcd[83772]: start time = 2022-07-04 21:52:10.411689588 +0000 UTC m=+450.941506209, time spent = 374.177µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:52:12 ubuntu etcd[83772]: start time = 2022-07-04 21:52:12.716856967 +0000 UTC m=+453.246673602, time spent = 280.999µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:56:28 ubuntu etcd[83772]: start time = 2022-07-04 21:56:28.233962298 +0000 UTC m=+708.763778917, time spent = 471.568µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:56:28 ubuntu etcd[83772]: start time = 2022-07-04 21:56:28.311831967 +0000 UTC m=+708.841648587, time spent = 162.43µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:56:28 ubuntu etcd[83772]: start time = 2022-07-04 21:56:28.462424838 +0000 UTC m=+708.992241457, time spent = 156.273µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:56:28 ubuntu etcd[83772]: start time = 2022-07-04 21:56:28.591807121 +0000 UTC m=+709.121623745, time spent = 167.083µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:56:28 ubuntu etcd[83772]: start time = 2022-07-04 21:56:28.814817625 +0000 UTC m=+709.344634243, time spent = 273.288µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:57:00 ubuntu etcd[83772]: start time = 2022-07-04 21:57:00.624821613 +0000 UTC m=+741.154638233, time spent = 137.373µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:57:00 ubuntu etcd[83772]: start time = 2022-07-04 21:57:00.703935291 +0000 UTC m=+741.233751922, time spent = 395.453µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:57:00 ubuntu etcd[83772]: start time = 2022-07-04 21:57:00.900734999 +0000 UTC m=+741.430551619, time spent = 179.307µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:57:01 ubuntu etcd[83772]: start time = 2022-07-04 21:57:01.35058614 +0000 UTC m=+741.880402760, time spent = 278.32µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 04 21:57:01 ubuntu etcd[83772]: start time = 2022-07-04 21:57:01.41193369 +0000 UTC m=+741.941750313, time spent = 179.94µs, remote = 192.168.79.46:38056, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
