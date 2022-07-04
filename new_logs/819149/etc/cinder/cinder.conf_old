@@ -7,22 +7,22 @@ project_name = service
 user_domain_name = Default
 password = hpinvent
 username = cinder
-auth_url = http://192.168.79.38/identity
+auth_url = http://192.168.79.49/identity
 interface = public
 auth_type = password
 
 [DEFAULT]
-cinder_internal_tenant_user_id = d383294aad6742dabd3d142c403e7475
-cinder_internal_tenant_project_id = 5f374eda4d3349699b05444a164912bd
+cinder_internal_tenant_user_id = 5e2366d12e4f4b469c162365b5dd2680
+cinder_internal_tenant_project_id = 2ba0f0d7f27a4ef5936c1066c46a3940
 graceful_shutdown_timeout = 5
-glance_api_servers = http://192.168.79.38/image
+glance_api_servers = http://192.168.79.49/image
 osapi_volume_workers = 2
 logging_exception_prefix = ERROR %(name)s [01;35m%(instance)s[00m
 logging_default_format_string = %(color)s%(levelname)s %(name)s [[00;36m-%(color)s] [01;35m%(instance)s%(color)s%(message)s[00m
 logging_context_format_string = %(color)s%(levelname)s %(name)s [[01;36m%(global_request_id)s %(request_id)s [00;36m%(project_name)s %(user_name)s%(color)s] [01;35m%(instance)s%(color)s%(message)s[00m
 logging_debug_format_suffix = [00;33m{{(pid=%(process)d) %(funcName)s %(pathname)s:%(lineno)d}}[00m
-transport_url = rabbit://stackrabbit:hpinvent@192.168.79.38:5672/
-backup_swift_url = http://192.168.79.38:8080/v1/AUTH_
+transport_url = rabbit://stackrabbit:hpinvent@192.168.79.49:5672/
+backup_swift_url = http://192.168.79.49:8080/v1/AUTH_
 backup_driver = cinder.backup.drivers.swift.SwiftBackupDriver
 default_volume_type = lvmdriver-1
 enabled_backends = lvmdriver-1
@@ -30,7 +30,7 @@ rpc_response_timeout = 120
 quota_snapshots = 10
 quota_backups = 10
 quota_volumes = 10
-my_ip = 192.168.79.38
+my_ip = 192.168.79.49
 state_path = /opt/stack/data/cinder
 osapi_volume_listen = 0.0.0.0
 osapi_volume_extension = cinder.api.contrib.standard_extensions
@@ -67,9 +67,9 @@ project_name = service
 user_domain_name = Default
 password = hpinvent
 username = nova
-auth_url = http://192.168.79.38/identity
+auth_url = http://192.168.79.49/identity
 interface = public
 auth_type = password
 
 [coordination]
-backend_url = etcd3+http://192.168.79.38:2379
+backend_url = etcd3+http://192.168.79.49:2379
