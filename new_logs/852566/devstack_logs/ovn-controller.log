@@ -1,0 +1,45 @@
+2022-08-09T13:57:39.419Z|00001|vlog|INFO|opened log file /tmp/devstack_logs/ovn-controller.log
+2022-08-09T13:57:39.422Z|00002|reconnect|INFO|unix:/usr/local/var/run/openvswitch/db.sock: connecting...
+2022-08-09T13:57:39.422Z|00003|reconnect|INFO|unix:/usr/local/var/run/openvswitch/db.sock: connected
+2022-08-09T13:57:39.431Z|00004|main|INFO|OVS IDL reconnected, force recompute.
+2022-08-09T13:57:39.431Z|00005|reconnect|INFO|tcp:192.168.79.43:6642: connecting...
+2022-08-09T13:57:39.431Z|00006|main|INFO|OVNSB IDL reconnected, force recompute.
+2022-08-09T13:57:39.431Z|00007|reconnect|INFO|tcp:192.168.79.43:6642: connected
+2022-08-09T13:57:39.436Z|00008|ofctrl|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connecting to switch
+2022-08-09T13:57:39.436Z|00009|rconn|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connecting...
+2022-08-09T13:57:39.436Z|00010|rconn|WARN|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connection failed (No such file or directory)
+2022-08-09T13:57:39.436Z|00011|rconn|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: waiting 1 seconds before reconnect
+2022-08-09T13:57:40.439Z|00012|rconn|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connecting...
+2022-08-09T13:57:40.440Z|00013|rconn|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connected
+2022-08-09T13:57:40.442Z|00001|pinctrl(ovn_pinctrl0)|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connecting to switch
+2022-08-09T13:57:40.442Z|00002|rconn(ovn_pinctrl0)|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connecting...
+2022-08-09T13:57:40.442Z|00003|rconn(ovn_pinctrl0)|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connected
+2022-08-09T13:57:42.968Z|00014|reconnect|INFO|unix:/usr/local/var/run/openvswitch/db.sock: connection closed by peer
+2022-08-09T13:57:43.450Z|00004|rconn(ovn_pinctrl0)|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connection closed by peer
+2022-08-09T13:57:43.450Z|00015|rconn|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connection closed by peer
+2022-08-09T13:57:43.969Z|00016|reconnect|INFO|unix:/usr/local/var/run/openvswitch/db.sock: connecting...
+2022-08-09T13:57:43.969Z|00017|reconnect|INFO|unix:/usr/local/var/run/openvswitch/db.sock: connected
+2022-08-09T13:57:44.221Z|00018|main|INFO|OVNSB commit failed, force recompute next time.
+2022-08-09T13:57:44.221Z|00019|jsonrpc|WARN|tcp:192.168.79.43:6642: receive error: Connection reset by peer
+2022-08-09T13:57:44.222Z|00020|reconnect|WARN|tcp:192.168.79.43:6642: connection dropped (Connection reset by peer)
+2022-08-09T13:57:44.450Z|00021|rconn|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connecting...
+2022-08-09T13:57:44.451Z|00005|rconn(ovn_pinctrl0)|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connecting...
+2022-08-09T13:57:44.451Z|00022|rconn|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connected
+2022-08-09T13:57:44.452Z|00006|rconn(ovn_pinctrl0)|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connected
+2022-08-09T13:57:45.222Z|00023|reconnect|INFO|tcp:192.168.79.43:6642: connecting...
+2022-08-09T13:57:45.222Z|00024|reconnect|INFO|tcp:192.168.79.43:6642: connected
+2022-08-09T13:57:45.410Z|00001|vlog|INFO|opened log file /tmp/devstack_logs/ovn-controller.log
+2022-08-09T13:57:45.411Z|00002|reconnect|INFO|unix:/usr/local/var/run/openvswitch/db.sock: connecting...
+2022-08-09T13:57:45.411Z|00003|reconnect|INFO|unix:/usr/local/var/run/openvswitch/db.sock: connected
+2022-08-09T13:57:45.419Z|00004|main|INFO|OVS IDL reconnected, force recompute.
+2022-08-09T13:57:45.419Z|00005|reconnect|INFO|tcp:192.168.79.43:6642: connecting...
+2022-08-09T13:57:45.419Z|00006|main|INFO|OVNSB IDL reconnected, force recompute.
+2022-08-09T13:57:45.419Z|00007|reconnect|INFO|tcp:192.168.79.43:6642: connected
+2022-08-09T13:57:45.423Z|00008|ofctrl|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connecting to switch
+2022-08-09T13:57:45.423Z|00009|rconn|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connecting...
+2022-08-09T13:57:45.423Z|00010|rconn|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connected
+2022-08-09T13:57:45.431Z|00001|pinctrl(ovn_pinctrl0)|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connecting to switch
+2022-08-09T13:57:45.431Z|00002|rconn(ovn_pinctrl0)|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connecting...
+2022-08-09T13:57:45.437Z|00003|rconn(ovn_pinctrl0)|INFO|unix:/usr/local/var/run/openvswitch/br-int.mgmt: connected
+2022-08-09T13:59:14.240Z|00011|binding|INFO|Claiming lport cr-lrp-3d5e1f15-9c8f-40b4-885a-16ba90985b9f for this chassis.
+2022-08-09T13:59:14.240Z|00012|binding|INFO|cr-lrp-3d5e1f15-9c8f-40b4-885a-16ba90985b9f: Claiming fa:16:3e:04:90:6f 172.24.4.139/24
