@@ -1,0 +1,259 @@
+2022-08-09 19:33:08.437 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.437 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.437 | +./stack.sh:main:469                       exec
+2022-08-09 19:33:08.437 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.437 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.437 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.437 | +./stack.sh:main:477                       echo_summary 'stack.sh log /tmp/devstack_logs/devstacklog.txt.2022-08-09-193308'
+2022-08-09 19:33:08.437 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.437 | ++./stack.sh:main:469                       /usr/bin/python3.7 /opt/stack/devstack/tools/outfilter.py -o /tmp/devstack_logs/devstacklog.txt.2022-08-09-193308.summary.2022-08-09-193308
+2022-08-09 19:33:08.437 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.437 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.437 | +./stack.sh:echo_summary:422               [[ -t 3 ]]
+2022-08-09 19:33:08.437 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.437 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.437 | +./stack.sh:echo_summary:428               echo -e stack.sh log /tmp/devstack_logs/devstacklog.txt.2022-08-09-193308
+2022-08-09 19:33:08.438 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.438 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.438 | +./stack.sh:main:479                       ln -sf /tmp/devstack_logs/devstacklog.txt.2022-08-09-193308 /tmp/devstack_logs/devstacklog.txt
+2022-08-09 19:33:08.438 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.438 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.438 | +./stack.sh:main:480                       ln -sf /tmp/devstack_logs/devstacklog.txt.2022-08-09-193308.summary.2022-08-09-193308 /tmp/devstack_logs/devstacklog.txt.summary
+2022-08-09 19:33:08.438 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.438 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.438 | +./stack.sh:main:495                       check_path_perm_sanity /opt/stack
+2022-08-09 19:33:08.438 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.438 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.438 | +functions:check_path_perm_sanity:583      local real_path
+2022-08-09 19:33:08.441 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.447 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.447 | ++functions:check_path_perm_sanity:584      readlink -f /opt/stack
+2022-08-09 19:33:08.449 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.455 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.455 | +functions:check_path_perm_sanity:584      real_path=/opt/stack
+2022-08-09 19:33:08.457 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.461 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.461 | +functions:check_path_perm_sanity:585      local rebuilt_path=
+2022-08-09 19:33:08.465 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.465 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.471 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.471 | ++functions:check_path_perm_sanity:586      tr / ' '
+2022-08-09 19:33:08.472 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.473 | ++functions:check_path_perm_sanity:586      echo /opt/stack
+2022-08-09 19:33:08.475 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.480 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.480 | +functions:check_path_perm_sanity:586      for i in $(echo ${real_path} | tr "/" " ")
+2022-08-09 19:33:08.482 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.486 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.487 | +functions:check_path_perm_sanity:587      rebuilt_path=/opt
+2022-08-09 19:33:08.490 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.495 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.496 | ++functions:check_path_perm_sanity:589      stat -c %a /opt
+2022-08-09 19:33:08.500 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.505 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.505 | +functions:check_path_perm_sanity:589      [[ 755 = 700 ]]
+2022-08-09 19:33:08.507 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.512 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.512 | +functions:check_path_perm_sanity:586      for i in $(echo ${real_path} | tr "/" " ")
+2022-08-09 19:33:08.515 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.520 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.520 | +functions:check_path_perm_sanity:587      rebuilt_path=/opt/stack
+2022-08-09 19:33:08.523 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.529 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.530 | ++functions:check_path_perm_sanity:589      stat -c %a /opt/stack
+2022-08-09 19:33:08.535 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.540 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.541 | +functions:check_path_perm_sanity:589      [[ 777 = 700 ]]
+2022-08-09 19:33:08.543 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.549 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.549 | +./stack.sh:main:501                       trap exit_trap EXIT
+2022-08-09 19:33:08.552 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.558 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.558 | +./stack.sh:main:542                       trap err_trap ERR
+2022-08-09 19:33:08.560 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.566 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.567 | +./stack.sh:main:555                       set -o errexit
+2022-08-09 19:33:08.569 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.575 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.576 | +./stack.sh:main:558                       uname -a
+2022-08-09 19:33:08.577 | Linux ubuntu 4.15.0-188-generic #199-Ubuntu SMP Wed Jun 15 20:42:56 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+2022-08-09 19:33:08.580 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.586 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.586 | +./stack.sh:main:561                       SSL_BUNDLE_FILE=/opt/stack/data/ca-bundle.pem
+2022-08-09 19:33:08.588 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.593 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.593 | +./stack.sh:main:562                       rm -f /opt/stack/data/ca-bundle.pem
+2022-08-09 19:33:08.597 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.603 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.603 | +./stack.sh:main:565                       source /opt/stack/devstack/lib/database
+2022-08-09 19:33:08.607 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.608 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.613 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.614 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.620 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.624 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.627 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.631 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.653 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.658 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.659 | +./stack.sh:main:566                       source /opt/stack/devstack/lib/rpc_backend
+2022-08-09 19:33:08.662 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.663 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.668 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.670 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.674 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.679 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.682 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.687 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.696 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.702 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.702 | +./stack.sh:main:572                       fetch_plugins
+2022-08-09 19:33:08.705 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.710 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.710 | +functions-common:fetch_plugins:1689       local plugins=,neutron
+2022-08-09 19:33:08.712 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.717 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.718 | +functions-common:fetch_plugins:1690       local plugin
+2022-08-09 19:33:08.720 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.724 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.724 | +functions-common:fetch_plugins:1693       [[ -z ,neutron ]]
+2022-08-09 19:33:08.726 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.731 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.731 | +functions-common:fetch_plugins:1697       echo 'Fetching DevStack plugins'
+2022-08-09 19:33:08.731 | Fetching DevStack plugins
+2022-08-09 19:33:08.732 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.737 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.737 | +functions-common:fetch_plugins:1698       for plugin in ${plugins//,/ }
+2022-08-09 19:33:08.739 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.743 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.744 | +functions-common:fetch_plugins:1699       git_clone_by_name neutron
+2022-08-09 19:33:08.746 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.750 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.751 | +functions-common:git_clone_by_name:613    local name=neutron
+2022-08-09 19:33:08.752 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.757 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.757 | +functions-common:git_clone_by_name:614    local repo=https://opendev.org/openstack/neutron
+2022-08-09 19:33:08.758 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.763 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.764 | +functions-common:git_clone_by_name:615    local dir=/opt/stack/neutron
+2022-08-09 19:33:08.766 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.770 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.771 | +functions-common:git_clone_by_name:616    local branch=stable/ussuri
+2022-08-09 19:33:08.772 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.777 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.777 | +functions-common:git_clone_by_name:617    git_clone https://opendev.org/openstack/neutron /opt/stack/neutron stable/ussuri
+2022-08-09 19:33:08.779 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.783 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.783 | +functions-common:git_clone:523            local git_remote=https://opendev.org/openstack/neutron
+2022-08-09 19:33:08.785 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.790 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.790 | +functions-common:git_clone:524            local git_dest=/opt/stack/neutron
+2022-08-09 19:33:08.792 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.797 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.797 | +functions-common:git_clone:525            local git_ref=stable/ussuri
+2022-08-09 19:33:08.799 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.803 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.804 | +functions-common:git_clone:526            local orig_dir
+2022-08-09 19:33:08.807 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.813 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.814 | ++functions-common:git_clone:527            pwd
+2022-08-09 19:33:08.817 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.823 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.823 | +functions-common:git_clone:527            orig_dir=/opt/stack/devstack
+2022-08-09 19:33:08.825 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.831 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.832 | +functions-common:git_clone:528            local git_clone_flags=
+2022-08-09 19:33:08.835 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.842 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.843 | ++functions-common:git_clone:530            trueorfalse False RECLONE
+2022-08-09 19:33:08.846 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.853 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.858 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.859 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.864 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.865 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.870 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.873 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.875 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.880 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.882 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.886 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.886 | +functions-common:git_clone:530            RECLONE=False
+2022-08-09 19:33:08.888 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.892 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.892 | +functions-common:git_clone:531            [[ 0 -gt 0 ]]
+2022-08-09 19:33:08.894 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.898 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.898 | +functions-common:git_clone:535            [[ False = \T\r\u\e ]]
+2022-08-09 19:33:08.900 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.901 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.904 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.904 | +functions-common:git_clone:544            echo stable/ussuri
+2022-08-09 19:33:08.905 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.905 | +functions-common:git_clone:544            egrep -q '^refs'
+2022-08-09 19:33:08.909 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.913 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.913 | +functions-common:git_clone:558            [[ ! -d /opt/stack/neutron ]]
+2022-08-09 19:33:08.915 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.919 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.919 | +functions-common:git_clone:559            [[ False = \T\r\u\e ]]
+2022-08-09 19:33:08.920 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.924 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.924 | +functions-common:git_clone:565            git_timed clone https://opendev.org/openstack/neutron /opt/stack/neutron --branch stable/ussuri
+2022-08-09 19:33:08.926 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.930 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.930 | +functions-common:git_timed:629            local count=0
+2022-08-09 19:33:08.932 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.935 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.935 | +functions-common:git_timed:630            local timeout=0
+2022-08-09 19:33:08.936 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.940 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.941 | +functions-common:git_timed:632            [[ -n 0 ]]
+2022-08-09 19:33:08.942 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.945 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.945 | +functions-common:git_timed:633            timeout=0
+2022-08-09 19:33:08.947 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.952 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.952 | +functions-common:git_timed:636            time_start git_timed
+2022-08-09 19:33:08.954 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.959 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.960 | +functions-common:time_start:2329          local name=git_timed
+2022-08-09 19:33:08.961 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.965 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.966 | +functions-common:time_start:2330          local start_time=
+2022-08-09 19:33:08.967 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.971 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.971 | +functions-common:time_start:2331          [[ -n '' ]]
+2022-08-09 19:33:08.974 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.979 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.980 | ++functions-common:time_start:2334          date +%s%3N
+2022-08-09 19:33:08.984 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.989 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.989 | +functions-common:time_start:2334          _TIME_START[$name]=1660073588981
+2022-08-09 19:33:08.991 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.995 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:08.995 | +functions-common:git_timed:637            timeout -s SIGINT 0 git clone https://opendev.org/openstack/neutron /opt/stack/neutron --branch stable/ussuri
+2022-08-09 19:33:09.000 | Cloning into '/opt/stack/neutron'...
+2022-08-09 19:33:36.957 | error: RPC failed; curl 56 GnuTLS recv error (-24): Decryption has failed.
+2022-08-09 19:33:36.957 | fatal: The remote end hung up unexpectedly
+2022-08-09 19:33:36.957 | fatal: early EOF
+2022-08-09 19:33:36.960 | fatal: index-pack failed
+2022-08-09 19:33:36.987 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:36.992 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:36.993 | +functions-common:git_timed:640            [[ 128 -ne 124 ]]
+2022-08-09 19:33:36.994 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:36.999 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:37.000 | +functions-common:git_timed:641            die 641 'git call failed: [git clone' https://opendev.org/openstack/neutron /opt/stack/neutron --branch 'stable/ussuri]'
+2022-08-09 19:33:37.002 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:37.006 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:37.007 | +functions-common:die:193                  local exitcode=0
+2022-08-09 19:33:37.008 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:37.013 | tput: No value for $TERM and no -T specified
+2022-08-09 19:33:37.015 | [Call Trace]
+2022-08-09 19:33:37.015 | ./stack.sh:572:fetch_plugins
+2022-08-09 19:33:37.015 | /opt/stack/devstack/functions-common:1699:git_clone_by_name
+2022-08-09 19:33:37.015 | /opt/stack/devstack/functions-common:617:git_clone
+2022-08-09 19:33:37.015 | /opt/stack/devstack/functions-common:565:git_timed
+2022-08-09 19:33:37.015 | /opt/stack/devstack/functions-common:641:die
+2022-08-09 19:33:37.019 | [ERROR] /opt/stack/devstack/functions-common:641 git call failed: [git clone https://opendev.org/openstack/neutron /opt/stack/neutron --branch stable/ussuri]
+2022-08-09 19:33:38.023 | Error on exit
