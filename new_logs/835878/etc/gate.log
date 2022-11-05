@@ -1,385 +1,0 @@
-19:35:16 RT program started
-SHELL=/bin/bash
-no_proxy=192.168.79.1,192.168.79.16,192.168.79.17,192.168.79.18,192.168.79.19,192.168.79.20,192.168.79.21,192.168.79.22,192.168.79.23,192.168.79.24,192.168.79.25,192.168.79.26,192.168.79.27,192.168.79.28,192.168.79.29,192.168.79.30,192.168.79.31,192.168.79.32,192.168.79.33,192.168.79.34,192.168.79.35,192.168.79.36,192.168.79.37,192.168.79.38,192.168.79.39,192.168.79.40,192.168.79.41,192.168.79.42,192.168.79.43,192.168.79.44,192.168.79.45,192.168.79.46,192.168.79.47,192.168.79.48,192.168.79.49,192.168.79.50,192.168.67.2,192.168.67.5
-PWD=/home/ubuntu
-LOGNAME=ubuntu
-XDG_SESSION_TYPE=tty
-MOTD_SHOWN=pam
-HOME=/home/ubuntu
-LANG=C.UTF-8
-https_proxy=http://16.85.88.10:8080
-SSH_CONNECTION=15.212.193.108 44294 15.212.196.155 22
-XDG_SESSION_CLASS=user
-USER=ubuntu
-SHLVL=1
-HTTPS_PROXY=http://16.85.88.10:8080
-HTTP_PROXY=http://16.85.88.10:8080
-XDG_SESSION_ID=1
-http_proxy=http://16.85.88.10:8080
-XDG_RUNTIME_DIR=/run/user/1000
-SSH_CLIENT=15.212.193.108 44294 22
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
-_=/usr/bin/env
-19:35:16 RT We are inside agent gate
- To check what array_ip_var_name is printing
-SSA02_IP
-19:35:22 RT Below Functions are created to manage CPG
-19:35:22 RT Calling various functions. Line 288
-19:35:22 RT Inside install_packages
-Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
-Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
-Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
-Get:4 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1740 kB]
-Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
-Get:6 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [11.1 kB]
-Get:7 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [1200 kB]
-Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2113 kB]
-Get:9 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [588 B]
-Get:10 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [728 kB]
-Get:11 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [955 kB]
-Get:12 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [21.6 kB]
-Get:13 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [15.1 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [23.9 kB]
-Get:15 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [22.2 kB]
-Get:16 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [860 B]
-Get:17 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [508 B]
-Fetched 7167 kB in 3s (2121 kB/s)
-Reading package lists...
-Building dependency tree...
-Reading state information...
-All packages are up to date.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  python-pip-whl python3-wheel
-Recommended packages:
-  build-essential
-The following NEW packages will be installed:
-  python-pip-whl python3-pip python3-wheel
-0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
-Need to get 2060 kB of archives.
-After this operation, 3465 kB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python-pip-whl all 20.0.2-5ubuntu1.6 [1805 kB]
-Get:2 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-wheel all 0.34.2-1 [23.8 kB]
-Get:3 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3-pip all 20.0.2-5ubuntu1.6 [231 kB]
-Fetched 2060 kB in 1s (1564 kB/s)
-Selecting previously unselected package python-pip-whl.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 44977 files and directories currently installed.)
-Preparing to unpack .../python-pip-whl_20.0.2-5ubuntu1.6_all.deb ...
-Unpacking python-pip-whl (20.0.2-5ubuntu1.6) ...
-Selecting previously unselected package python3-wheel.
-Preparing to unpack .../python3-wheel_0.34.2-1_all.deb ...
-Unpacking python3-wheel (0.34.2-1) ...
-Selecting previously unselected package python3-pip.
-Preparing to unpack .../python3-pip_20.0.2-5ubuntu1.6_all.deb ...
-Unpacking python3-pip (20.0.2-5ubuntu1.6) ...
-Setting up python3-wheel (0.34.2-1) ...
-Setting up python-pip-whl (20.0.2-5ubuntu1.6) ...
-Setting up python3-pip (20.0.2-5ubuntu1.6) ...
-Processing triggers for man-db (2.9.1-1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  libgnutls-dane0 libopts25 libunbound8
-Suggested packages:
-  dns-root-data
-The following NEW packages will be installed:
-  gnutls-bin libgnutls-dane0 libopts25 libunbound8
-0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
-Need to get 714 kB of archives.
-After this operation, 2765 kB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libunbound8 amd64 1.9.4-2ubuntu1.3 [350 kB]
-Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgnutls-dane0 amd64 3.6.13-2ubuntu1.7 [29.1 kB]
-Get:3 http://archive.ubuntu.com/ubuntu focal/universe amd64 libopts25 amd64 1:5.18.16-3 [59.4 kB]
-Get:4 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 gnutls-bin amd64 3.6.13-2ubuntu1.7 [275 kB]
-Fetched 714 kB in 1s (685 kB/s)
-Selecting previously unselected package libunbound8:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45237 files and directories currently installed.)
-Preparing to unpack .../libunbound8_1.9.4-2ubuntu1.3_amd64.deb ...
-Unpacking libunbound8:amd64 (1.9.4-2ubuntu1.3) ...
-Selecting previously unselected package libgnutls-dane0:amd64.
-Preparing to unpack .../libgnutls-dane0_3.6.13-2ubuntu1.7_amd64.deb ...
-Unpacking libgnutls-dane0:amd64 (3.6.13-2ubuntu1.7) ...
-Selecting previously unselected package libopts25:amd64.
-Preparing to unpack .../libopts25_1%3a5.18.16-3_amd64.deb ...
-Unpacking libopts25:amd64 (1:5.18.16-3) ...
-Selecting previously unselected package gnutls-bin.
-Preparing to unpack .../gnutls-bin_3.6.13-2ubuntu1.7_amd64.deb ...
-Unpacking gnutls-bin (3.6.13-2ubuntu1.7) ...
-Setting up libopts25:amd64 (1:5.18.16-3) ...
-Setting up libunbound8:amd64 (1.9.4-2ubuntu1.3) ...
-Setting up libgnutls-dane0:amd64 (3.6.13-2ubuntu1.7) ...
-Setting up gnutls-bin (3.6.13-2ubuntu1.7) ...
-Processing triggers for man-db (2.9.1-1) ...
-Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
-Collecting setuptools==59.7.0
-  Downloading setuptools-59.7.0-py3-none-any.whl (952 kB)
-Installing collected packages: setuptools
-  Attempting uninstall: setuptools
-    Found existing installation: setuptools 45.2.0
-    Not uninstalling setuptools at /usr/lib/python3/dist-packages, outside environment /usr
-    Can't uninstall 'setuptools'. No files were found to uninstall.
-Successfully installed setuptools-59.7.0
-Collecting setuptools_rust
-  Downloading setuptools_rust-1.5.2-py3-none-any.whl (23 kB)
-Collecting typing-extensions>=3.7.4.3
-  Downloading typing_extensions-4.3.0-py3-none-any.whl (25 kB)
-Collecting semantic-version<3,>=2.8.2
-  Downloading semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
-Collecting setuptools>=62.4
-  Downloading setuptools-65.3.0-py3-none-any.whl (1.2 MB)
-Installing collected packages: typing-extensions, semantic-version, setuptools, setuptools-rust
-  Attempting uninstall: setuptools
-    Found existing installation: setuptools 59.7.0
-    Uninstalling setuptools-59.7.0:
-      Successfully uninstalled setuptools-59.7.0
-Successfully installed semantic-version-2.10.0 setuptools-65.3.0 setuptools-rust-1.5.2 typing-extensions-4.3.0
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  libssh2-1 libstd-rust-1.59 libstd-rust-dev
-Suggested packages:
-  cargo-doc lld-13 clang-13
-Recommended packages:
-  llvm-13
-The following NEW packages will be installed:
-  cargo libssh2-1 libstd-rust-1.59 libstd-rust-dev rustc
-0 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
-Need to get 79.8 MB of archives.
-After this operation, 362 MB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 libssh2-1 amd64 1.8.0-2.1build1 [75.4 kB]
-Get:2 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libstd-rust-1.59 amd64 1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2 [39.6 MB]
-Get:3 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 libstd-rust-dev amd64 1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2 [33.3 MB]
-Get:4 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 rustc amd64 1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2 [3424 kB]
-Get:5 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 cargo amd64 0.60.0ubuntu1-0ubuntu1~20.04.1 [3397 kB]
-Fetched 79.8 MB in 7s (11.7 MB/s)
-Selecting previously unselected package libssh2-1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45276 files and directories currently installed.)
-Preparing to unpack .../libssh2-1_1.8.0-2.1build1_amd64.deb ...
-Unpacking libssh2-1:amd64 (1.8.0-2.1build1) ...
-Selecting previously unselected package libstd-rust-1.59:amd64.
-Preparing to unpack .../libstd-rust-1.59_1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2_amd64.deb ...
-Unpacking libstd-rust-1.59:amd64 (1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2) ...
-Selecting previously unselected package libstd-rust-dev:amd64.
-Preparing to unpack .../libstd-rust-dev_1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2_amd64.deb ...
-Unpacking libstd-rust-dev:amd64 (1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2) ...
-Selecting previously unselected package rustc.
-Preparing to unpack .../rustc_1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2_amd64.deb ...
-Unpacking rustc (1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2) ...
-Selecting previously unselected package cargo.
-Preparing to unpack .../cargo_0.60.0ubuntu1-0ubuntu1~20.04.1_amd64.deb ...
-Unpacking cargo (0.60.0ubuntu1-0ubuntu1~20.04.1) ...
-Setting up libstd-rust-1.59:amd64 (1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2) ...
-Setting up libssh2-1:amd64 (1.8.0-2.1build1) ...
-Setting up libstd-rust-dev:amd64 (1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2) ...
-Setting up rustc (1.59.0+dfsg1~ubuntu1~llvm-1~ubuntu1~20.04.2) ...
-Setting up cargo (0.60.0ubuntu1-0ubuntu1~20.04.1) ...
-Processing triggers for man-db (2.9.1-1) ...
-Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-python3-dev is already the newest version (3.8.2-0ubuntu2).
-The following additional packages will be installed:
-  g++ g++-9 libstdc++-9-dev
-Suggested packages:
-  g++-multilib g++-9-multilib gcc-9-doc libssl-doc libstdc++-9-doc
-The following NEW packages will be installed:
-  build-essential g++ g++-9 libffi-dev libssl-dev libstdc++-9-dev
-0 upgraded, 6 newly installed, 0 to remove and 0 not upgraded.
-Need to get 11.8 MB of archives.
-After this operation, 55.1 MB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libstdc++-9-dev amd64 9.4.0-1ubuntu1~20.04.1 [1722 kB]
-Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 g++-9 amd64 9.4.0-1ubuntu1~20.04.1 [8420 kB]
-Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 g++ amd64 4:9.3.0-1ubuntu2 [1604 B]
-Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 build-essential amd64 12.8ubuntu1.1 [4664 B]
-Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libssl-dev amd64 1.1.1f-1ubuntu2.16 [1584 kB]
-Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libffi-dev amd64 3.3-4 [57.0 kB]
-Fetched 11.8 MB in 2s (5908 kB/s)
-Selecting previously unselected package libstdc++-9-dev:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45399 files and directories currently installed.)
-Preparing to unpack .../0-libstdc++-9-dev_9.4.0-1ubuntu1~20.04.1_amd64.deb ...
-Unpacking libstdc++-9-dev:amd64 (9.4.0-1ubuntu1~20.04.1) ...
-Selecting previously unselected package g++-9.
-Preparing to unpack .../1-g++-9_9.4.0-1ubuntu1~20.04.1_amd64.deb ...
-Unpacking g++-9 (9.4.0-1ubuntu1~20.04.1) ...
-Selecting previously unselected package g++.
-Preparing to unpack .../2-g++_4%3a9.3.0-1ubuntu2_amd64.deb ...
-Unpacking g++ (4:9.3.0-1ubuntu2) ...
-Selecting previously unselected package build-essential.
-Preparing to unpack .../3-build-essential_12.8ubuntu1.1_amd64.deb ...
-Unpacking build-essential (12.8ubuntu1.1) ...
-Selecting previously unselected package libssl-dev:amd64.
-Preparing to unpack .../4-libssl-dev_1.1.1f-1ubuntu2.16_amd64.deb ...
-Unpacking libssl-dev:amd64 (1.1.1f-1ubuntu2.16) ...
-Selecting previously unselected package libffi-dev:amd64.
-Preparing to unpack .../5-libffi-dev_3.3-4_amd64.deb ...
-Unpacking libffi-dev:amd64 (3.3-4) ...
-Setting up libstdc++-9-dev:amd64 (9.4.0-1ubuntu1~20.04.1) ...
-Setting up libffi-dev:amd64 (3.3-4) ...
-Setting up libssl-dev:amd64 (1.1.1f-1ubuntu2.16) ...
-Setting up g++-9 (9.4.0-1ubuntu1~20.04.1) ...
-Setting up g++ (4:9.3.0-1ubuntu2) ...
-update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
-Setting up build-essential (12.8ubuntu1.1) ...
-Processing triggers for man-db (2.9.1-1) ...
-Processing triggers for install-info (6.7.0.dfsg.2-5) ...
-Collecting python-3parclient
-  Downloading python_3parclient-4.2.12-py2.py3-none-any.whl (144 kB)
-Collecting paramiko
-  Downloading paramiko-2.11.0-py2.py3-none-any.whl (212 kB)
-Collecting eventlet
-  Downloading eventlet-0.33.1-py2.py3-none-any.whl (226 kB)
-Requirement already satisfied: requests in /usr/lib/python3/dist-packages (from python-3parclient) (2.22.0)
-Collecting bcrypt>=3.1.3
-  Downloading bcrypt-4.0.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (594 kB)
-Requirement already satisfied: cryptography>=2.5 in /usr/lib/python3/dist-packages (from paramiko->python-3parclient) (2.8)
-Requirement already satisfied: pynacl>=1.0.1 in /usr/lib/python3/dist-packages (from paramiko->python-3parclient) (1.3.0)
-Requirement already satisfied: six in /usr/lib/python3/dist-packages (from paramiko->python-3parclient) (1.14.0)
-Collecting dnspython>=1.15.0
-  Downloading dnspython-2.2.1-py3-none-any.whl (269 kB)
-Collecting greenlet>=0.3
-  Downloading greenlet-1.1.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (157 kB)
-Installing collected packages: bcrypt, paramiko, dnspython, greenlet, eventlet, python-3parclient
-Successfully installed bcrypt-4.0.0 dnspython-2.2.1 eventlet-0.33.1 greenlet-1.1.3 paramiko-2.11.0 python-3parclient-4.2.12
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  nvme-cli
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-Need to get 283 kB of archives.
-After this operation, 687 kB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 nvme-cli amd64 1.9-1ubuntu0.1 [283 kB]
-Fetched 283 kB in 1s (304 kB/s)
-Selecting previously unselected package nvme-cli.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46413 files and directories currently installed.)
-Preparing to unpack .../nvme-cli_1.9-1ubuntu0.1_amd64.deb ...
-Unpacking nvme-cli (1.9-1ubuntu0.1) ...
-Setting up nvme-cli (1.9-1ubuntu0.1) ...
-Processing triggers for man-db (2.9.1-1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  vlan
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-Need to get 11.3 kB of archives.
-After this operation, 50.2 kB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 vlan all 2.0.4ubuntu1.20.04.1 [11.3 kB]
-Fetched 11.3 kB in 1s (17.5 kB/s)
-Selecting previously unselected package vlan.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46532 files and directories currently installed.)
-Preparing to unpack .../vlan_2.0.4ubuntu1.20.04.1_all.deb ...
-Unpacking vlan (2.0.4ubuntu1.20.04.1) ...
-Setting up vlan (2.0.4ubuntu1.20.04.1) ...
-Processing triggers for man-db (2.9.1-1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  net-tools
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-Need to get 196 kB of archives.
-After this operation, 864 kB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
-Fetched 196 kB in 1s (213 kB/s)
-Selecting previously unselected package net-tools.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46547 files and directories currently installed.)
-Preparing to unpack .../net-tools_1.60+git20180626.aebd88e-1ubuntu1_amd64.deb ...
-Unpacking net-tools (1.60+git20180626.aebd88e-1ubuntu1) ...
-Setting up net-tools (1.60+git20180626.aebd88e-1ubuntu1) ...
-Processing triggers for man-db (2.9.1-1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  socat
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-Need to get 323 kB of archives.
-After this operation, 1394 kB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 socat amd64 1.7.3.3-2 [323 kB]
-Fetched 323 kB in 1s (328 kB/s)
-Selecting previously unselected package socat.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46596 files and directories currently installed.)
-Preparing to unpack .../socat_1.7.3.3-2_amd64.deb ...
-Unpacking socat (1.7.3.3-2) ...
-Setting up socat (1.7.3.3-2) ...
-Processing triggers for man-db (2.9.1-1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following packages were automatically installed and are no longer required:
-  apport-symptoms bc bolt fwupd fwupd-signed landscape-common libatasmart4
-  libblockdev-crypto2 libblockdev-fs2 libblockdev-loop2 libblockdev-part-err2
-  libblockdev-part2 libblockdev-swap2 libblockdev-utils2 libblockdev2
-  libfwupdplugin5 libmbim-glib4 libmbim-proxy libmm-glib0 libmspack0 libnspr4
-  libnss3 libparted-fs-resize0 libqmi-glib5 libqmi-proxy libsmbios-c2
-  libtss2-esys0 libudisks2-0 libvolume-key1 libxmlsec1 libxmlsec1-openssl
-  libxslt1.1 lxd-agent-loader modemmanager open-vm-tools python3-automat
-  python3-click python3-colorama python3-constantly python3-entrypoints
-  python3-hamcrest python3-httplib2 python3-hyperlink python3-incremental
-  python3-keyring python3-lazr.uri python3-problem-report python3-pyasn1
-  python3-pyasn1-modules python3-secretstorage python3-service-identity
-  python3-systemd python3-twisted python3-twisted-bin python3-wadllib
-  python3-zope.interface sbsigntool secureboot-db tpm-udev udisks2
-  usb-modeswitch usb-modeswitch-data zerofree
-Use 'sudo apt autoremove' to remove them.
-The following packages will be REMOVED:
-  apport* python3-apport* python3-launchpadlib* python3-lazr.restfulclient*
-  python3-simplejson* ubuntu-server*
-0 upgraded, 0 newly installed, 6 to remove and 0 not upgraded.
-After this operation, 2161 kB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46636 files and directories currently installed.)
-Removing ubuntu-server (1.450.2) ...
-Removing apport (2.20.11-0ubuntu27.24) ...
-Removing python3-apport (2.20.11-0ubuntu27.24) ...
-Removing python3-launchpadlib (1.10.13-1) ...
-Removing python3-lazr.restfulclient (0.14.2-2build1) ...
-Removing python3-simplejson (3.16.0-2ubuntu2) ...
-Processing triggers for man-db (2.9.1-1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46396 files and directories currently installed.)
-Purging configuration files for apport (2.20.11-0ubuntu27.24) ...
-Processing triggers for systemd (245.4-4ubuntu3.18) ...
-Collecting simplejson
-  Downloading simplejson-3.17.6-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (139 kB)
-Installing collected packages: simplejson
-Successfully installed simplejson-3.17.6
-Reading package lists...
-Building dependency tree...
-Reading state information...
-Package 'python-pyasn1-modules' is not installed, so not removed
-The following packages were automatically installed and are no longer required:
-  apport-symptoms bc bolt fwupd fwupd-signed landscape-common libatasmart4
-  libblockdev-crypto2 libblockdev-fs2 libblockdev-loop2 libblockdev-part-err2
-  libblockdev-part2 libblockdev-swap2 libblockdev-utils2 libblockdev2
-  libfwupdplugin5 libmbim-glib4 libmbim-proxy libmm-glib0 libmspack0 libnspr4
-  libnss3 libparted-fs-resize0 libqmi-glib5 libqmi-proxy libsmbios-c2
-  libtss2-esys0 libudisks2-0 libvolume-key1 libxmlsec1 libxmlsec1-openssl
-  libxslt1.1 lxd-agent-loader modemmanager open-vm-tools python3-automat
-  python3-click python3-colorama python3-constantly python3-entrypoints
-  python3-hamcrest python3-httplib2 python3-hyperlink python3-incremental
-  python3-keyring python3-lazr.uri python3-problem-report python3-pyasn1
-  python3-pyasn1-modules python3-secretstorage python3-service-identity
-  python3-systemd python3-twisted python3-twisted-bin python3-wadllib
-  python3-zope.interface sbsigntool secureboot-db tpm-udev udisks2
-  usb-modeswitch usb-modeswitch-data zerofree
-Use 'sudo apt autoremove' to remove them.
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Collecting pyasn1-modules
-  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
-Collecting pyasn1<0.5.0,>=0.4.6
-  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
-Installing collected packages: pyasn1, pyasn1-modules
-Successfully installed pyasn1-0.4.8 pyasn1-modules-0.2.8
-Looking in indexes: https://m.devpi.net/jaraco/dev
-Collecting suds-jurko
-  Downloading https://m.devpi.net/jaraco/dev/%2Bf/a0b/10c4a6e1e1ec9/suds_jurko-0.6-py3-none-any.whl (457 kB)
-Installing collected packages: suds-jurko
-Successfully installed suds-jurko-0.6
-19:37:26 RT Inside clone_projects
-19:37:27 RT git clone master
