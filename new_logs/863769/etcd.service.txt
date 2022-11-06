@@ -1,0 +1,45 @@
+-- Logs begin at Fri 2022-11-04 21:50:44 UTC, end at Sun 2022-11-06 03:23:14 UTC. --
+Nov 06 03:10:09 ubuntu systemd[1]: Starting Devstack devstack@etcd.service...
+Nov 06 03:10:09 ubuntu etcd[82304]: etcd Version: 3.3.12
+Nov 06 03:10:09 ubuntu etcd[82304]: Git SHA: d57e8b8
+Nov 06 03:10:09 ubuntu etcd[82304]: Go Version: go1.10.8
+Nov 06 03:10:09 ubuntu etcd[82304]: Go OS/Arch: linux/amd64
+Nov 06 03:10:09 ubuntu etcd[82304]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Nov 06 03:10:09 ubuntu etcd[82304]: listening for peers on http://0.0.0.0:2380
+Nov 06 03:10:09 ubuntu etcd[82304]: listening for client requests on 192.168.79.46:2379
+Nov 06 03:10:09 ubuntu etcd[82304]: name = ubuntu
+Nov 06 03:10:09 ubuntu etcd[82304]: data dir = /opt/stack/data/etcd
+Nov 06 03:10:09 ubuntu etcd[82304]: member dir = /opt/stack/data/etcd/member
+Nov 06 03:10:09 ubuntu etcd[82304]: heartbeat = 100ms
+Nov 06 03:10:09 ubuntu etcd[82304]: election = 1000ms
+Nov 06 03:10:09 ubuntu etcd[82304]: snapshot count = 100000
+Nov 06 03:10:09 ubuntu etcd[82304]: advertise client URLs = http://192.168.79.46:2379
+Nov 06 03:10:09 ubuntu etcd[82304]: initial advertise peer URLs = http://192.168.79.46:2380
+Nov 06 03:10:09 ubuntu etcd[82304]: initial cluster = ubuntu=http://192.168.79.46:2380
+Nov 06 03:10:09 ubuntu etcd[82304]: starting member badf6973fad3533f in cluster e37d5472f6817136
+Nov 06 03:10:09 ubuntu etcd[82304]: badf6973fad3533f became follower at term 0
+Nov 06 03:10:09 ubuntu etcd[82304]: newRaft badf6973fad3533f [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Nov 06 03:10:09 ubuntu etcd[82304]: badf6973fad3533f became follower at term 1
+Nov 06 03:10:09 ubuntu etcd[82304]: simple token is not cryptographically signed
+Nov 06 03:10:09 ubuntu etcd[82304]: starting server... [version: 3.3.12, cluster version: to_be_decided]
+Nov 06 03:10:09 ubuntu etcd[82304]: badf6973fad3533f as single-node; fast-forwarding 9 ticks (election ticks 10)
+Nov 06 03:10:09 ubuntu etcd[82304]: added member badf6973fad3533f [http://192.168.79.46:2380] to cluster e37d5472f6817136
+Nov 06 03:10:09 ubuntu etcd[82304]: badf6973fad3533f is starting a new election at term 1
+Nov 06 03:10:09 ubuntu etcd[82304]: badf6973fad3533f became candidate at term 2
+Nov 06 03:10:09 ubuntu etcd[82304]: badf6973fad3533f received MsgVoteResp from badf6973fad3533f at term 2
+Nov 06 03:10:09 ubuntu etcd[82304]: badf6973fad3533f became leader at term 2
+Nov 06 03:10:09 ubuntu etcd[82304]: raft.node: badf6973fad3533f elected leader badf6973fad3533f at term 2
+Nov 06 03:10:09 ubuntu etcd[82304]: published {Name:ubuntu ClientURLs:[http://192.168.79.46:2379]} to cluster e37d5472f6817136
+Nov 06 03:10:09 ubuntu etcd[82304]: setting up the initial cluster version to 3.3
+Nov 06 03:10:09 ubuntu systemd[1]: Started Devstack devstack@etcd.service.
+Nov 06 03:10:09 ubuntu etcd[82304]: ready to serve client requests
+Nov 06 03:10:09 ubuntu etcd[82304]: set the initial cluster version to 3.3
+Nov 06 03:10:09 ubuntu etcd[82304]: enabled capabilities for version 3.3
+Nov 06 03:10:09 ubuntu etcd[82304]: INFO: 2022/11/06 03:10:09 dialing to target with scheme: ""
+Nov 06 03:10:09 ubuntu etcd[82304]: INFO: 2022/11/06 03:10:09 could not get resolver for scheme: ""
+Nov 06 03:10:09 ubuntu etcd[82304]: serving insecure client requests on 192.168.79.46:2379, this is strongly discouraged!
+Nov 06 03:17:51 ubuntu etcd[82304]: start time = 2022-11-06 03:17:51.787880335 +0000 UTC m=+462.586419849, time spent = 12.675267ms, remote = 192.168.79.46:38370, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Nov 06 03:17:51 ubuntu etcd[82304]: start time = 2022-11-06 03:17:51.805365296 +0000 UTC m=+462.603904806, time spent = 176.578µs, remote = 192.168.79.46:38370, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Nov 06 03:18:00 ubuntu etcd[82304]: start time = 2022-11-06 03:18:00.38520564 +0000 UTC m=+471.183745153, time spent = 255.147µs, remote = 192.168.79.46:38370, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Nov 06 03:18:03 ubuntu etcd[82304]: start time = 2022-11-06 03:18:03.187505255 +0000 UTC m=+473.986044765, time spent = 235.931µs, remote = 192.168.79.46:38370, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Nov 06 03:18:48 ubuntu etcd[82304]: INFO: 2022/11/06 03:18:48 Failed to decode request: http: invalid Read on closed Body
